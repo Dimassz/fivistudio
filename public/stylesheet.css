@@ -463,9 +463,10 @@ hr{
       cursor: pointer;
     }
     .active-filter {
-      background-color: #287A77;
-      color: white;
-    }
+    background-color: #287A77 !important; /* Pakai !important untuk override bootstrap */
+    color: white !important;
+    border-color: #287A77 !important;
+}
     .portfolio-item {
       display: none;
     }
