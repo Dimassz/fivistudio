@@ -1,5 +1,7 @@
 @media only screen and (max-width: 987px) {
-    
+    body {
+  overflow-x: hidden;
+}
     .cta-box-2{
         display: none;
     }
@@ -43,7 +45,40 @@
     flex-wrap: wrap;
   }
  
-}
+  .header-text h1{
+    font-size: 34px;
+  }
+  .header-text p{
+    font-size: 16px;
+  }
+  .header-text a{
+    font-size: 10px;
+  }
+  
+  .header-logo img{
+    width: 50%;
+  }
+  .header-text{
+    width: 50%;
+  }
+  .header-logo{
+    width: 50%;
+  }
+  .about-us-image img{
+    width: 250px;
+  }
+  .about-us-text h6{
+    font-size: 14px;
+  }
+  .visi-misi-container h6{
+    font-size: 14px;
+  }
+  .about-us-container{
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  }
 @media only screen and (max-width: 641px){
     .addres-content{
         flex-direction: column;
@@ -59,5 +94,43 @@
   }
    .footer-about{
     width: 100%;
+  }
+  .header-logo{
+    display: none;
+  }
+  .header-text{
+    width: 100%;
+    text-align: center;
+  }
+  .visi-misi-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .visi-misi-container h6{
+    font-size: 10px;
+  }
+    .visi-misi-container h4{
+    font-size: 18px;
+  }
+  .misi{
+    margin-top: 10px;
+  }
+  .about-us-container{
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .about-us-text{
+    margin-top: 20px;
+    width: 90%;
+  }
+    .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .visi{
+    width: 90%;
+  }
+  .misi{
+    width: 90%;
   }
 }

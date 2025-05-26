@@ -1,10 +1,9 @@
 *{
-    *{
     padding: 0px;
     margin:0px;
     box-sizing: border-box;
      font-family: "Poppins", sans-serif;
-}
+     
 }
 
 .poppins-thin {
@@ -400,3 +399,73 @@ hr{
     text-align: left;
     margin-right: 18px;
   }
+  .navbar{
+    width: auto;
+  }
+  .header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+
+  }
+  .header-logo img{
+    width: 70%;
+
+  }
+  .header-logo{
+    text-align: end;
+  }
+
+  .about-us-container{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+  }
+  .about-us-text{
+    width: 50%;
+  }
+
+  .visi-misi{
+    background-color: #F8F8F8;
+
+  }
+  .visi-misi-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .visi-misi-container h4{
+    color: #2c8481;
+  }
+    .visi-misi-container h6{
+    font-weight: 400
+  }
+  .visi{
+    width: 48%;
+  }
+  .misi{
+    width: 48%;
+  }
+  .photo-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #287A77;
+  }
+  .photo-box img{
+    margin-top: 30px;
+  }
+    .filter-btn {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    .active-filter {
+      background-color: #287A77;
+      color: white;
+    }
+    .portfolio-item {
+      display: none;
+    }
