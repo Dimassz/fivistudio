@@ -1,0 +1,28 @@
+@media only screen and (max-width: 987px) {
+    
+    .cta-box-2{
+        display: none;
+    }
+    .cta-box{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 60%;
+        height: 30vh;
+    }
+    .cta-box-1{
+        margin: auto;
+        margin: auto
+    }
+      .cta-box-1 h4{
+    font-size: 18px;
+  }
+   .cta-box-1 h6{
+    font-size: 10px;
+  }
+     .cta-box-1 a{
+    font-size: 8px;
+  }
+
+
+}
