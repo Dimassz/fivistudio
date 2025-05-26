@@ -355,3 +355,48 @@ hr{
     margin-bottom: 9px;
   }
 
+  .footer{
+    width: 100%;
+    height: auto;
+    background-color: #287A77;
+    margin-top: 60px;
+  }
+
+  .footer-content{
+    display: flex;
+    color: white;
+    width: 95%;
+    margin: auto;
+    padding-top: 10px;
+  }
+
+  .footer hr{
+    width: 30px;
+    border-color: #48D1CC;
+  }
+  .footer li{
+    list-style: none;
+    font-size: 14px;
+    margin-top: 7px;
+  }
+  .addres-content{
+    display: flex;
+  }
+
+  .footer p{
+    font-size: 14px;
+  }
+  .addres-1{
+    width: 50%;
+  }
+   .addres-2{
+    width: 50%;
+  }
+  .footer-1{
+    width: 25%;
+  }
+  .footer-about{
+    width: 40%;
+    text-align: left;
+    margin-right: 18px;
+  }

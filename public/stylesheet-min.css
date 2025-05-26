@@ -23,6 +23,41 @@
      .cta-box-1 a{
     font-size: 8px;
   }
+  .navbar-brand img{
+    width: 34px !important;
+  }
+  .navbar{
+    padding: 7px !important;
+  }
+  .navbar-toggler{
+    border: none;
+  }
+  .nav-item a{
+    font-size: 10px;
+  }
+  .collapse a{
+    font-size: 10px;
+  }
 
-
+  .footer-content{
+    flex-wrap: wrap;
+  }
+ 
+}
+@media only screen and (max-width: 641px){
+    .addres-content{
+        flex-direction: column;
+    }
+    .addres-1{
+    width: 100%;
+  }
+  .addres-2{
+    width: 100%;
+  }
+  .footer-1{
+    width: 100%;
+  }
+   .footer-about{
+    width: 100%;
+  }
 }
