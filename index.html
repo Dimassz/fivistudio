@@ -57,7 +57,7 @@
     <div class="collapse navbar-collapse justify-content-between custom-navbar" id="navbarContent">
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link text-info fw-semibold" href="#">Home</a>
+          <a class="nav-link text-info fw-semibold" href="#">Halaman Utama</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-info fw-semibold" href="about-us.html">Tentang Kami</a>
@@ -66,7 +66,7 @@
           <a class="nav-link text-info fw-semibold" href="/portofolio.html  ">Portofolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-info fw-semibold" href="#pricing">Harga dan Layanan</a>
+          <a class="nav-link text-info fw-semibold" href="#pricing">Pilih Layanan</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-info fw-semibold" href="#footer">Kontak</a>
@@ -197,13 +197,13 @@
       <!-- Gambar 4 -->
       <img src="/assets/porto/home_interior/1.svg" alt="Project 4" class="carousel-image"loading="lazy">
       <!-- Gambar 5 -->
-      <img src="/assets/porto/office/4.svg" alt="Project 5" class="carousel-image"loading="lazy">
+      <img src="/assets/porto/office/ruang_direktur.svg" alt="Project 5" class="carousel-image"loading="lazy">
       
-      <img src="/assets/porto/office/7.svg" alt="Project 1" class="carousel-image"loading="lazy">
-      <img src="/assets/porto/commersial/9.svg" alt="Project 2" class="carousel-image"loading="lazy">
+      <img src="/assets/porto/office/dapur.svg" alt="Project 1" class="carousel-image"loading="lazy">
+      <img src="/assets/porto/commersial/1c.svg" alt="Project 2" class="carousel-image"loading="lazy">
       <img src="/assets/porto/home_interior/7.svg" alt="Project 3" class="carousel-image"loading="lazy">
       <img src="/assets/porto/eksterior/2.svg" alt="Project 4" class="carousel-image"loading="lazy">
-      <img src="/assets/porto/home_interior/5.svg" alt="Project 5" class="carousel-image"loading="lazy">
+      <img src="/assets/porto/home_interior/7.svg" alt="Project 5" class="carousel-image"loading="lazy">
     </div>
   <div class="text-center mt-5">
     <a href="/portofolio.html#catalog" style="color: #287A77; text-decoration: none;">Lihat Selengkapnya..</a>
@@ -328,6 +328,17 @@
             <p><i class="bi bi-envelope"></i> <a href="mailto:fivistudio@gmail.com" style="text-decoration: none; color: white;"> fivistudio@gmail.com </a></p>
           
           </div>
+          <div class="footer-chat">
+            <h4>KONSULTASI GRATIS</h4>
+            <hr>
+              <form id="waForm">
+              <input type="text" id="nama" placeholder="Nama (required)" required  maxlength="20"/>
+              <input type="email" id="email" placeholder="Alamat Email" maxlength="20"/>
+              <input type="text" id="telepon" placeholder="Telepon / WA (required)" required maxlength="12"/>
+              <textarea id="pesan" placeholder="Pesan Anda (required)" required maxlength="100"></textarea>
+              <button type="submit">KIRIM PESAN</button>
+            </form>
+          </div>
           <div class="footer-2">
             <h4>ALAMAT KAMI</h4>
             <hr>
@@ -354,6 +365,24 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
   AOS.init();
+  </script>
+  <script>
+    document.getElementById('waForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const nama = document.getElementById('nama').value;
+      const email = document.getElementById('email').value;
+      const telepon = document.getElementById('telepon').value;
+      const pesan = document.getElementById('pesan').value;
+
+      const whatsappNumber = '6282258002550'; // Ganti dengan nomor WA tujuan
+
+      const text = `Halo Fivi Studio! Saya ingin menghubungi:\n\nNama: ${nama}\nEmail: ${email}\nTelepon: ${telepon}\nPesan: ${pesan}`;
+      const encodedText = encodeURIComponent(text);
+      const waUrl = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
+
+      window.open(waUrl, '_blank');
+    });
   </script>
   </body>
 </html>

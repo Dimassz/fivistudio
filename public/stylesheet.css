@@ -397,10 +397,11 @@ hr{
     width: 50%;
   }
   .footer-1{
-    width: 25%;
+    width: 24%;
+    margin-right:13px ;
   }
   .footer-about{
-    width: 40%;
+    width: 25%;
     text-align: left;
     margin-right: 18px;
   }
@@ -479,4 +480,31 @@ hr{
 
     .package-box ul{
       list-style: none;
+    }
+
+  .footer-chat{
+    width: 35%;
+    margin-right: 25px;
+  }
+input, textarea {
+      width: 100%;
+      padding: 7px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 15px;
+      background-color: #f1f1f1;
+      font-size: 16px;
+    }
+    textarea {
+      border-radius: 15px;
+    }
+    button {
+      background-color: #48D1CC;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 25px;
+      cursor: pointer;
     }

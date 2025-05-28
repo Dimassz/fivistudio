@@ -55,7 +55,7 @@
     <div class="collapse navbar-collapse justify-content-between custom-navbar" id="navbarContent">
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link text-info fw-semibold" href="/">Home</a>
+          <a class="nav-link text-info fw-semibold" href="/">Halaman Utama</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-info fw-semibold" href="#">Tentang Kami</a>
@@ -64,7 +64,7 @@
           <a class="nav-link text-info fw-semibold" href="/portofolio.html">Portofolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-info fw-semibold" href="/index.html#pricing">Harga dan Layanan</a>
+          <a class="nav-link text-info fw-semibold" href="/index.html#pricing">Pilih Layanan</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-info fw-semibold" href="#footer">Kontak</a>
@@ -83,7 +83,7 @@
             <div class="container position-relative py-5 header-container">
               <div class="header-text">
                 <h1 class="display-4 fw-bold">Desain Dulu Aja<span style="color: #48D1CC !important;">.</span></h1>
-                <p class="lead fw-semibold mt-3">HUNIAN • KANTOR • CAFE • HOTEL</p>
+               <p class="lead fw-semibold mt-3">RUANG PUBLIK • HUNIAN • KANTOR • CAFÉ • HOTEL</p>
                 <a href="https://wa.me/6282258002550?text=Halo%20Fivi%20Studio%2C%20saya%20ingin%20konsultasi%20mengenai%20desain%20interior%20%26%20arsitektur." target="_blank" class="btn text-white fw-semibold mt-4 px-4 py-2" style="background-color:#48D1CC  ;">Konsultasi Gratis Sekarang</a>
               </div>
               <div class="header-logo">
@@ -229,6 +229,18 @@ fungsional, dan estetik dengan mengedepankan kepuasan customer</h6>
             <p><i class="bi bi-envelope"></i> <a href="mailto:fivistudio@gmail.com" style="text-decoration: none; color: white;"> fivistudio@gmail.com </a></p>
           
           </div>
+          
+          <div class="footer-chat">
+            <h4>KONSULTASI GRATIS</h4>
+            <hr>
+              <form id="waForm">
+              <input type="text" id="nama" placeholder="Nama (required)" required  maxlength="20"/>
+              <input type="email" id="email" placeholder="Alamat Email" maxlength="20"/>
+              <input type="text" id="telepon" placeholder="Telepon / WA (required)" required maxlength="12"/>
+              <textarea id="pesan" placeholder="Pesan Anda (required)" required maxlength="100"></textarea>
+              <button type="submit">KIRIM PESAN</button>
+            </form>
+          </div>
           <div class="footer-2">
             <h4>ALAMAT KAMI</h4>
             <hr>
@@ -256,6 +268,23 @@ fungsional, dan estetik dengan mengedepankan kepuasan customer</h6>
   <script>
   AOS.init();
   </script>
-  
+   <script>
+    document.getElementById('waForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const nama = document.getElementById('nama').value;
+      const email = document.getElementById('email').value;
+      const telepon = document.getElementById('telepon').value;
+      const pesan = document.getElementById('pesan').value;
+
+      const whatsappNumber = '6282258002550'; // Ganti dengan nomor WA tujuan
+
+      const text = `Halo Fivi Studio! Saya ingin menghubungi:\n\nNama: ${nama}\nEmail: ${email}\nTelepon: ${telepon}\nPesan: ${pesan}`;
+      const encodedText = encodeURIComponent(text);
+      const waUrl = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
+
+      window.open(waUrl, '_blank');
+    });
+  </script>
   </body>
 </html>

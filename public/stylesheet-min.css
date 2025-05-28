@@ -143,4 +143,8 @@
   .misi{
     width: 90%;
   }
+  .footer-chat{
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }
