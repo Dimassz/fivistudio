@@ -1,0 +1,150 @@
+@media only screen and (max-width: 987px) {
+    body {
+  overflow-x: hidden;
+}
+    .cta-box-2{
+        display: none;
+    }
+    .cta-box{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 60%;
+        height: 30vh;
+    }
+    .cta-box-1{
+        margin: auto;
+        margin: auto
+    }
+      .cta-box-1 h4{
+    font-size: 18px;
+  }
+   .cta-box-1 h6{
+    font-size: 10px;
+  }
+     .cta-box-1 a{
+    font-size: 8px;
+  }
+  .navbar-brand img{
+    width: 34px !important;
+  }
+  .navbar{
+    padding: 7px !important;
+  }
+  .navbar-toggler{
+    border: none;
+  }
+  .nav-item a{
+    font-size: 10px;
+  }
+  .collapse a{
+    font-size: 10px;
+  }
+
+  .footer-content{
+    flex-wrap: wrap;
+  }
+ 
+  .header-text h1{
+    font-size: 34px;
+  }
+  .header-text p{
+    font-size: 16px;
+  }
+  .header-text a{
+    font-size: 10px;
+  }
+  
+  .header-logo img{
+    width: 50%;
+  }
+  .header-text{
+    width: 50%;
+  }
+  .header-logo{
+    width: 50%;
+  }
+  .about-us-image img{
+    width: 250px;
+  }
+  .about-us-text h6{
+    font-size: 14px;
+  }
+  .visi-misi-container h6{
+    font-size: 14px;
+  }
+  .about-us-container{
+    width: 100%;
+    margin-top: 30px;
+  }
+   .active-filter {
+    background-color: #287A77!important;
+    color: white !important;
+  }
+
+  }
+@media only screen and (max-width: 641px){
+  .custom-container{
+    width: 90%;
+  }
+  .custom-container p{
+    font-size: 14px;
+  }
+    .addres-content{
+        flex-direction: column;
+    }
+    .addres-1{
+    width: 100%;
+  }
+  .addres-2{
+    width: 100%;
+  }
+  .footer-1{
+    width: 100%;
+  }
+   .footer-about{
+    width: 100%;
+  }
+  .header-logo{
+    display: none;
+  }
+  .header-text{
+    width: 100%;
+    text-align: center;
+  }
+  .visi-misi-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .visi-misi-container h6{
+    font-size: 10px;
+  }
+    .visi-misi-container h4{
+    font-size: 18px;
+  }
+  .misi{
+    margin-top: 10px;
+  }
+  .about-us-container{
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .about-us-text{
+    margin-top: 20px;
+    width: 90%;
+  }
+    .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .visi{
+    width: 90%;
+  }
+  .misi{
+    width: 90%;
+  }
+  .footer-chat{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
